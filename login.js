@@ -95,7 +95,16 @@ loginbtn.addEventListener('click',()=>{
 
 
 
-
+let passicon = document.querySelector('#passicon')
+passicon.addEventListener('click',()=>{
+    let lpass = document.querySelector('#lpass')
+    if(lpass.type === 'password'){
+        lpass.type = 'text'
+    }
+    else{
+        lpass.type = 'password'
+    }
+})
 
 
 

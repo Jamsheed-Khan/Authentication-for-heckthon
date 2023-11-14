@@ -76,3 +76,13 @@ registerbtn.addEventListener('click',()=>{
 })
 
 
+let signupicon = document.querySelector('#signupicon')
+signupicon.addEventListener('click',()=>{
+    let spass = document.querySelector('#spass')
+    if(spass.type === 'password'){
+        spass.type = 'text'
+    }
+    else{
+        spass.type = 'password'
+    }
+})
